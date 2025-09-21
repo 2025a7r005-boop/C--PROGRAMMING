@@ -1,0 +1,7 @@
+int main() {
+    int a, b, c, d, e;
+    
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
