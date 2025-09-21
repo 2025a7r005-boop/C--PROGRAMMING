@@ -1,10 +1,11 @@
-#include <stdio.h>
-#include <string.h>
-#include <math.h>
-#include <stdlib.h>
 
 int main() {
+    char char_val;
+    int int_vl;
+    float float_val;
+    double double_val;
+    scanf("%C %d %F %lf" ,&char_vl, &int_val, &float_val; &double_val);
+     printf("%c %d %.2f %.6lf/n" , chr_val, int_val, flot_val, double_val);
 
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
     return 0;
 }
