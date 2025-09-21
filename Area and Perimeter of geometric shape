@@ -1,0 +1,24 @@
+int main() {
+float r, a, l, w;
+    float c_area, c_peri;
+    float s_area, s_peri;
+    float r_area, r_peri;
+    const float PI = 3.1416;
+    scanf("%f", &r);
+    scanf("%f", &a);
+    scanf("%f %f", &l, &w);
+    c_area = PI * r * r;
+    c_peri = 2 * PI * r;
+    
+    s_area = a * a;
+    s_peri = 4 * a;
+    
+    r_area = l * w;
+    r_peri = 2 * (l + w);
+    
+    printf("Circle: %.2f %.2f\n", c_area, c_peri);
+    printf("Square: %.2f %.2f\n", s_area, s_peri);
+    printf("Rectangle: %.2f %.2f\n", r_area, r_peri);
+    
+    return 0;
+}
