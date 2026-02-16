@@ -1,0 +1,90 @@
+#include<stdio.h>
+#include<stdlib.h>
+#define max 100
+int stack [max] top= -1;
+isempty() {
+    return top == -1;   // comparison 
+}
+int isfull(){
+    return top = max -1;
+}
+void push(int value){
+    if(isfull){
+        printf("\nstack overflow. cannot push element into a stack. \n");
+        else{
+            stack(++top) = value;
+            printf("\npushed %d into the stack. \n", value);
+        }
+    }
+}
+int opop(){
+    if(isempty()){
+        printf("\nstack overflow. cannot pop from empty stack. \n");
+        return -1;
+    }
+    else{
+        int val = stack(top);
+        top--;
+        
+        return val;
+    }
+}
+void store(){
+    if(isempty()){
+        printf("\nstack is empty!!!\n");
+        else{
+            printf("stack elements are: \n");     // not possible but only used to check stack is insrting data properly or not
+            for(int istop; i>=0; i++){
+                printf("\n", stack[i]);
+            }
+        }
+    }
+}
+int peek(){
+    if(isempty()){
+        printf("\n stack overflow. cannot peek from empty stack.\n");
+        return -1;
+        else{
+            int val = stack(top);
+            top--;
+            return val;
+        }
+    }
+}
+int main() {23
+    int choice, val, res;
+    while(1){
+        printf("1.\n");
+        printf("2.pop\n");
+        printf("3.peek\n");
+        printf("4.display\n");
+        printf("5.exit\n"0);
+        printf("enter choice: ");
+        scanf("%d", &choice);
+        switch(choice){
+            case 1:
+            printf("enter value: ");
+            scanf("%d", &val);
+            push(val);
+            break;
+            case 2:
+            res = pop();
+            if(res!= -1)
+            printf("\n%d pop from stack\n", res);
+            break;
+            case 3:
+            res= peek();
+            if(res!=-1)
+            printf("\n%d pop from stack\n", res);
+            break;
+            case 4:
+            break;
+            case 5:
+            break;
+            default:
+            printf("\ninvalid choice!!!\n");
+        }
+        printf("\n");
+    }
+    return 0;
+}
